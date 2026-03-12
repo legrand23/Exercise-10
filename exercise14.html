@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commande de pizza</title>
+</head>
+<body>
+    <H1>Commande de pizza</H1>
+    <h2>Informatin client</h2>
+    <form>
+        <label for="nom">Nom</label><br>
+        <input type="text" id="nom" name="nom" required><br><br>
+
+        <label for="telephone">telephone</label><br>
+        <input type="tel" id="telephone" name="telephone" required><br><br>
+
+        <label for="Adresse">Adresse</label><br>
+        <input type="text" id="Adresse" name="Adresse" required><br><br>
+        <h2>Taille de la pizza</h2>
+        
+        <input type="radio" id="s" name="S" value="S">
+        <label for="s">S</label><br>
+        <input type="radio" id="m" name="M" value="M">
+        <label for="m">M</label><br>
+        <input type="radio" id="l" name="L" value="L">
+        <label for="l">L</label><br>
+        <input type="radio" id="xl" name="XL" value="XL">
+        <label for="xl">XL</label><br><br>
+    <h2>Pate</h2>
+        <select name="pate" id="pate">
+            <option value="fine">fine</option>
+            <option value="epaisse">epaisse</option>
+            <option value="sans gluten">sans gluten</option></select><br>
+    <h2>Ingredients</h2><br>
+            <input type="checkbox" id="pepperoni" name="pepperoni" value="pepperoni">
+            <label for="pepperoni">Pepperoni</label><br>
+            <input type="checkbox" id="champignons" name="champignons" value="champignons">
+            <label for="champignons">Champignons</label><br>
+            <input type="checkbox" id="oignons" name="oignons" value="oignons">
+            <label for="oignons">Oignons</label><br>
+            <input type="checkbox" id="olives" name="olives" value="olives">
+            <label for="olives">Olives</label><br>
+            <input type="checkbox" id="ananas" name="ananas" value="ananas">
+            <label for="ananas">Ananas</label><br> 
+            <input type="checkbox" id="jambon" name="jambon" value="jambon">
+            <label for="jambon">Jambon</label><br> 
+            <input type="checkbox" id="bacon" name="bacon" value="bacon">
+            <label for="bacon">Bacon</label><br>
+            <input type="checkbox" id="fromage" name="fromage" value="fromage">
+            <label for="fromage">Fromage</label><br>
+            <input type="checkbox" id="poulet" name="poulet" value="poulet">
+            <label for="poulet">Poulet</label><br>
+        </select>
+    <h2>Quantité</h2>
+        <input type="number" id="quantite" name="quantite" min="1" max="10"><br><br>
+    <h2>Boissons</h2>
+        <select name="boissons" id="boissons">
+            <option value="coca">Coca-Cola</option>
+            <option value="pepsi">Pepsi</option>
+            <option value="fanta">Fanta</option>
+            <option value="sprite">Sprite</option>
+            <option value="eau">Eau</option></select>
+    <h2>Instructions speciales</h2>
+        <textarea id="instructions" name="instructions" rows="4" cols="50"></textarea><br><br>
+        <button type="submit">Envoyer la commande</button>
+    <h2>Mode de livraison</h2>
+        <input type="radio" id="livraison" name="mode" value="livraison">
+        <label for="livraison">Livraison</label><br>
+        <input type="radio" id="retrait" name="mode" value="retrait">
+        <label for="retrait">Retrait en magasin</label><br><br>
+    <h2>Heure souhaitée</h2>
+        <input type="time" id="heure" name="heure"><br><br>
+
+    </form>
+    
+</body>
+</html>

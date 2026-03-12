@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Contact Professionel</title>
+</head>
+<body>
+    <h1>Formulaire de Contact Professionel</h1>
+
+    <form>
+        <label for="nom">Nom</label><br>
+        <input type="text" id="nom" name="nom" required><br><br>
+
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="telephone">Téléphone</label><br>
+        <input type="tel" id="telephone" name="telephone"><br><br>
+
+        <label for="entreprise">Entreprise</label><br>
+        <input type="text" id="entreprise" name="entreprise"><br><br>
+
+        <label for="objet">Objet du message</label><br>
+        <select id="objet" name="objet">
+            <option value="info">Demande d'information</option>
+            <option value="devis">Demande de devis</option>
+            <option value="support">Support technique</option>
+            <option value="partenariat">Proposition de partenariat</option>
+            <option value="autre">Autre</option>
+        </select><br><br>
+
+        <label for="message">Message</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+        <fieldset>
+            <legend>Niveau d'urgence (plusieurs choix possibles)</legend>
+            <input type="checkbox" id="urgence-faible" name="urgence" value="faible">
+            <label for="urgence-faible">Faible</label><br>
+            <input type="checkbox" id="urgence-moyen" name="urgence" value="moyen">
+            <label for="urgence-moyen">Moyen</label><br>
+            <input type="checkbox" id="urgence-eleve" name="urgence" value="eleve">
+            <label for="urgence-eleve">Élevé</label><br>
+            <input type="checkbox" id="urgence-critique" name="urgence" value="critique">
+            <label for="urgence-critique">Critique</label><br>
+        </fieldset><br>
+
+        <label for="fichier">Upload de fichier</label><br>
+        <input type="file" id="fichier" name="fichier"><br><br>
+
+        <label for="date-rappel">Date souhaitée pour rappel</label><br>
+        <input type="date" id="date-rappel" name="date-rappel"><br><br>
+
+        <label for="heure-dispo">Heures de disponibilité</label><br>
+        <input type="time" id="heure-dispo" name="heure-dispo"><br><br>
+
+        <button type="submit">Envoyer</button>
+    </form>
+
+</body>
+</html>
